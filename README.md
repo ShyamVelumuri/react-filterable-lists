@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# React Filterable Product List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive React application demonstrating advanced filtering, pagination, and data fetching patterns.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Core Features (40 marks)
+- ✅ Dynamic product list with name filtering (case-insensitive)
+- ✅ Category dropdown filtering
+- ✅ Beautiful grid layout with responsive design
 
-### `npm start`
+### Bonus Features (30 marks)
+- ✅ Price range sliders (min/max) for client-side filtering
+- ✅ URL persistence - all filter settings saved in query parameters
+- ✅ Custom `useFetch` hook with caching and retry functionality
+- ✅ `PostList` component demonstrating the useFetch hook
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Live Coding Component (30 marks)
+- ✅ Paginated data with "Load More" functionality
+- ✅ Loading spinner and comprehensive error handling
+- ✅ Smooth animations and professional UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start the development server:
+npm start
+Project Structure
+src/components/ - React components
+src/hooks/ - Custom React hooks
+src/utils/ - Utility functions
+src/data/ - Mock data
+src/styles/ - CSS styles
+Key Components
+FilterableProductList
+Main component with search, category filtering, and price range sliders.
 
-### `npm run build`
+useFetch Hook
+Custom hook providing:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Data fetching with loading states
+In-memory caching
+Error handling and retry functionality
+Automatic cache management
+PaginatedList
+Demonstrates pagination with "Load More" pattern and error handling.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Technologies Used
+React 18
+Tailwind CSS
+Custom hooks
+URL state management
+Local caching
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup Instructions
 
-### `npm run eject`
+1. **Create the project:**
+   ```bash
+   npx create-react-app react-filterable-list
+   cd react-filterable-list
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Replace the default files with the code provided above
+Install Tailwind CSS:
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+Update tailwind.config.js:
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+Start the development server:
+npm start
+The application will be available at http://localhost:3000 with all the requested features working perfectly! Each component is modular, reusable, and follows React best practices.# react-filterable-lists
